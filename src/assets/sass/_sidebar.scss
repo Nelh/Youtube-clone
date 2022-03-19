@@ -1,0 +1,29 @@
+.sidebar {
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 50px;
+    background-color: #fff;
+    overflow-y: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    .nav-link span {
+        padding: 0 15px;
+        vertical-align: bottom;
+        white-space: nowrap;
+        font-size: 15px;
+    }
+
+    .nav-footer {
+        padding-right: 30px;
+        padding-left: 1rem;
+        .nav-link {
+            padding: 0;
+            padding-right: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+}

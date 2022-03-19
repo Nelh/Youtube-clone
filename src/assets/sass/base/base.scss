@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+
+.page-content {
+    margin-left: 250px;
+    position: relative;
+}
+
+.card-video {
+    h4 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    div {
+        color: gray;
+        font-size: 13px;
+    }
+
+    &-details {
+        img {
+            border-radius: 50%;
+        }
+    }
+}
