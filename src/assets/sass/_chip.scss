@@ -1,7 +1,7 @@
 .chip-container {
-    background-color: #fff;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     padding: 10px 15px;
     position: sticky;
     top: 49px;
@@ -11,16 +11,17 @@
         display: inline-block;
         padding: 5px 10px;
         font-size: 12px;
-        background-color: rgba(0, 0, 0, 0.05);
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: var(--accent-color);
+        border: 1px solid var(--border);
         white-space: nowrap;
         margin-right: 5px;
         border-radius: 25px;
+        color: var(--color);
     }
 
     .chip.active {
-        background: #000;
-        color: #fff;
+        background: var(--color);
+        color: var(--background-color);
     }
 }
 

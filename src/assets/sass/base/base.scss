@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
+:root {
+    color-scheme: light dark;
+}
+
+@media (prefers-reduced-motion) {
+    * {
+        transition: none;
+    }
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f1f1f1;
+    background-color: var(--accent-background-color);
 }
 
 a {
@@ -24,11 +34,11 @@ a {
     h4 {
         font-size: 16px;
         font-weight: bold;
-        color: #000;
+        color:  var(--color);
     }
 
     div {
-        color: gray;
+        color: var(--link-color);
         font-size: 13px;
     }
 
@@ -37,4 +47,31 @@ a {
             border-radius: 50%;
         }
     }
+}
+
+.text-dark {
+    color: var(--color) !important;
+}
+
+svg path {
+    fill: var(--color);
+}
+
+input.form-control {
+    background-color: var(--accent-background-color) !important;
+    border-color: var(--border) !important;
+    color: var(--color) !important;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.input-group-text {
+    background-color: var(--accent-color) !important;
+    border-color: var(--border) !important;
+}
+
+
+hr {
+    background-color: var(--border) !important;
 }
